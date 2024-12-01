@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/left_paths.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/right_paths.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PrecalculationPath/HighlyOptimizedPathGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PrecalculationPath/OptimizedPathGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PrecalculationPath/OptimizedPathGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PrecalculationPath/OptimizedPathGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "path-pre-computation",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/alak/Documents/GitHub/dsa-aa-group13",
     "node.js.detected.package.eslint": "true",
@@ -90,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732943075608</updated>
-      <workItem from="1732957709265" duration="3211000" />
+      <workItem from="1732957709265" duration="3645000" />
     </task>
     <servers />
   </component>
