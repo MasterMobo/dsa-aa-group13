@@ -27,13 +27,14 @@ public class BinaryPathReader {
             t2 = System.currentTimeMillis();
 
             System.out.println("Reading time (ms): " + (t2 - t1));
-            System.out.println("Buffer size: " + buffer.remaining()/ (1024.0 * 1024.0) + " MB");
+            System.out.println("Buffer size: " + buffer.capacity()/ (1024.0 * 1024.0) + " MB");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public ByteBuffer getBuffer() {
+        buffer.rewind(); // Prepare buffer for reading
         return buffer;
     }
 }

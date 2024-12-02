@@ -44,7 +44,7 @@ public class BinaryConverter {
         return true;
     }
 
-    private boolean isMatch(long b1, long b2) {
+    public boolean isMatch(long b1, long b2) {
         return b1 == (b1 | b2);
     }
 }

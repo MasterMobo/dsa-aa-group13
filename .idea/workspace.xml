@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathMatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2pYVcXwHq1tot683VP2dQOHBN5R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -40,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "path-matching",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/Git Projects/dsa-aa-group13"
   }

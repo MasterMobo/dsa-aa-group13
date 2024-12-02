@@ -1,5 +1,7 @@
 package org.example.PathMatching.BinaryPathMatching;
 
+import org.example.PathMatching.PathGenerator;
+
 import java.nio.ByteBuffer;
 
 public class BinaryPathMatcher {
@@ -20,7 +22,6 @@ public class BinaryPathMatcher {
         BinaryConverter converter = new BinaryConverter();
 
         long[] input = converter.toBinArray(s);
-        long[] target = new long[4];
         int matchCount = 0;
 
         long t1, t2;
@@ -29,12 +30,18 @@ public class BinaryPathMatcher {
 
         // Process the data in the buffer
         while (buffer.remaining() >= 8) { // Ensure there's at least one long left to read
+            boolean matches = true;
+
             for (int i = 0; i < 4; i++) {
-                target[i] = buffer.getLong(); // Read one long
+                if (!converter.isMatch(buffer.getLong(), input[i])) {
+                    // Skip to next path early if this doesn't match
+                    matches = false;
+                    buffer.position(buffer.position() + (4 - i - 1) * 8);
+                    break;
+                }
             }
 
-            if (converter.isMatch(target, input))
-                matchCount++;
+            if (matches) matchCount++;
         }
 
         t2 = System.currentTimeMillis();
@@ -44,19 +51,20 @@ public class BinaryPathMatcher {
     }
 
     public static void main(String[] args) {
-        long t1, t2;
+//        String input = "*".repeat(63);
+        String input = "*****DR******R******R********************R*D************L******";
+//        PathGenerator generator = new PathGenerator(63);
+//        String input = generator.randomInputPath();
 
-        String input = "*".repeat(63);
-
-        t1 = System.currentTimeMillis();
         BinaryPathWriter writer = new BinaryPathWriter("paths.bin", 8_000_000);
         BinaryPathReader reader = new BinaryPathReader(writer);
         BinaryPathMatcher matcher = new BinaryPathMatcher(reader);
+        System.out.println();
 
-        int result = matcher.countMatches(input);
-        t2 = System.currentTimeMillis();
-
-        System.out.println("Total matches: " + result);
-        System.out.println("Total time (ms): " + (t2 - t1));
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Run #" + (i + 1));
+            System.out.println("Total matches: " + matcher.countMatches(input));
+            System.out.println();
+        }
     }
 }
