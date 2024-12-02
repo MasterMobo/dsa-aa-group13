@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="">
+    <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="added trie source files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatching/BinaryPathReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "path-matching",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Git Projects/dsa-aa-group13"
+    "last_opened_file_path": "E:/Git Projects/dsa-aa-group13",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">

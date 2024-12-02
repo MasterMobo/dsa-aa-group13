@@ -15,10 +15,9 @@ public class BinaryConverter {
         long bin = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            bin += map(s.charAt(i));
-
             // Shift 4 bits to the left to make room for next char
             bin <<= 4;
+            bin += map(s.charAt(i));
         }
 
         return bin;
