@@ -1,8 +1,6 @@
 package org.example.Benchmarking;
 
 import java.util.function.Supplier;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Benchmarker {
     private final int iterations;
@@ -12,32 +10,29 @@ public class Benchmarker {
     }
 
     public <T> BenchmarkResult<T> measure(Supplier<T> function) {
-        List<Long> executionTimes = new ArrayList<>();
-        List<T> results = new ArrayList<>();
+        // Due to Java's limitations with generic arrays, we're using Object[] internally and casting it.
+        // This is safe in this context since we're only storing the results and not manipulating them.
+        T[] results = (T[]) new Object[iterations];
+        long[] executionTimes = new long[iterations];
 
         for (int i = 0; i < iterations; i++) {
             long startTime = System.currentTimeMillis();
-            T result = function.get();
+            results[i] = function.get();
             long endTime = System.currentTimeMillis();
-
-            executionTimes.add(endTime - startTime);
-            results.add(result);
+            executionTimes[i] = endTime - startTime;
         }
 
-        double averageTime = executionTimes.stream()
-                .mapToLong(Long::valueOf)
-                .average()
-                .orElse(0.0);
+        // Calculate statistics
+        double averageTime = 0;
+        long minTime = executionTimes[0];
+        long maxTime = executionTimes[0];
 
-        long minTime = executionTimes.stream()
-                .mapToLong(Long::valueOf)
-                .min()
-                .orElse(0);
-
-        long maxTime = executionTimes.stream()
-                .mapToLong(Long::valueOf)
-                .max()
-                .orElse(0);
+        for (long time : executionTimes) {
+            averageTime += time;
+            if (time < minTime) minTime = time;
+            if (time > maxTime) maxTime = time;
+        }
+        averageTime /= iterations;
 
         return new BenchmarkResult<>(results, executionTimes, averageTime, minTime, maxTime);
     }

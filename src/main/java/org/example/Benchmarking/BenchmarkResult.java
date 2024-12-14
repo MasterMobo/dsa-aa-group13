@@ -1,15 +1,13 @@
 package org.example.Benchmarking;
 
-import java.util.List;
-
 public class BenchmarkResult<T> {
-    private final List<T> results;
-    private final List<Long> executionTimes;
+    private final T[] results;
+    private final long[] executionTimes;
     private final double averageTime;
     private final long minTime;
     private final long maxTime;
 
-    public BenchmarkResult(List<T> results, List<Long> executionTimes,
+    public BenchmarkResult(T[] results, long[] executionTimes,
                            double averageTime, long minTime, long maxTime) {
         this.results = results;
         this.executionTimes = executionTimes;
@@ -18,11 +16,11 @@ public class BenchmarkResult<T> {
         this.maxTime = maxTime;
     }
 
-    public List<T> getResults() {
+    public T[] getResults() {
         return results;
     }
 
-    public List<Long> getExecutionTimes() {
+    public long[] getExecutionTimes() {
         return executionTimes;
     }
 
@@ -42,6 +40,6 @@ public class BenchmarkResult<T> {
     public String toString() {
         return String.format(
                 "BenchmarkResult{iterations=%d, avgTime=%.2fms, minTime=%dms, maxTime=%dms}",
-                executionTimes.size(), averageTime, minTime, maxTime);
+                executionTimes.length, averageTime, minTime, maxTime);
     }
 }
