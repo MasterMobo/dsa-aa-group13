@@ -1,7 +1,7 @@
 package org.example.PathPrecomputation;
 
 public class GridPathSolver {
-    private final int N = 8; // Size of the input N x N grid
+    private final int N = 8; // Size of the N x N grid
 
     // Offset positions for directions U, R, D, L respectively
     private final int[] rowOffset = {-1, 0, 1, 0};
@@ -23,7 +23,6 @@ public class GridPathSolver {
     }
 
     // Backtracking method to find and store valid paths
-    // Time complexity: O(4^N)
     private int tryPath(int pathIdx, int currentRow, int currentColumn, StringBuilder path) {
         // Optimization checks (for valid path constraints)
         if ((onPath[currentRow][currentColumn - 1] && onPath[currentRow][currentColumn + 1])
@@ -96,9 +95,9 @@ public class GridPathSolver {
         // Set borders of the grid
         for (int i = 0; i < GRID_SIZE; i++) {
             onPath[0][i] = true;
-            onPath[9][i] = true;
+            onPath[GRID_SIZE - 1][i] = true;
             onPath[i][0] = true;
-            onPath[i][9] = true;
+            onPath[i][GRID_SIZE - 1] = true;
         }
 
         // Initialize the inside of the grid to be completely empty
