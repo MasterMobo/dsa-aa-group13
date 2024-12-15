@@ -27,12 +27,15 @@ public class BinaryConverter {
     }
 
     public long[] toBinArray(String s) {
-        long[] res = new long[4];
+        // Calculate how many full longs we need (16 chars per long)
+        int numFullLongs = (s.length() + 15) / 16;  // Round up division
+        long[] res = new long[numFullLongs];
 
-        res[0] = toBinary(s.substring(0, 16));
-        res[1] = toBinary(s.substring(16, 32));
-        res[2] = toBinary(s.substring(32, 48));
-        res[3] = toBinary(s.substring(48, 63));
+        for (int i = 0; i < numFullLongs; i++) {
+            int startIndex = i * 16;
+            int endIndex = Math.min(startIndex + 16, s.length());  // Don't go past string end
+            res[i] = toBinary(s.substring(startIndex, endIndex));
+        }
 
         return res;
     }

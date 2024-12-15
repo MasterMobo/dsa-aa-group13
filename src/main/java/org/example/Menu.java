@@ -51,8 +51,10 @@ public class Menu {
 
             try {
                 choice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
+                scanner.nextLine(); // Consume the leftover newline
             } catch (InputMismatchException e) {
+                // Handle invalid number input
+                scanner.nextLine(); // Consume the invalid input
                 System.out.println("Invalid input. Please enter a number.");
                 continue;
             }
@@ -62,13 +64,17 @@ public class Menu {
                     String randomString = generator.randomInputPath();
                     System.out.println("Your new random sequence is:" + randomString);
                     System.out.println();
-                    executeMatcher(randomString);
+                    System.out.print("Enter the number of runs: ");
+                    int runs = getValidRunsInput();
+                    executeMatcher(randomString, runs);
                 }
                 case 2 -> {
                     System.out.print("Enter the sequence: ");
                     String input = scanner.nextLine();
                     System.out.println();
-                    executeMatcher(input);
+                    System.out.print("Enter the number of runs: ");
+                    int runs = getValidRunsInput();
+                    executeMatcher(input, runs);
                 }
                 case 0 -> {
                     System.out.println("Exiting...");
@@ -76,12 +82,28 @@ public class Menu {
                 }
                 default -> System.out.println("Invalid choice. Please try again.");
             }
-
         }
     }
 
-    private void executeMatcher(String path) {
-        for (int i = 0; i < 5; i++) {
+    private int getValidRunsInput() {
+        while (true) {
+            try {
+                int runs = scanner.nextInt();
+                scanner.nextLine(); // Consume the leftover newline
+                if (runs <= 0) {
+                    System.out.print("Please enter a positive number: ");
+                    continue;
+                }
+                return runs;
+            } catch (InputMismatchException e) {
+                scanner.nextLine(); // Consume the invalid input
+                System.out.print("Invalid input. Please enter a positive number: ");
+            }
+        }
+    }
+
+    private void executeMatcher(String path, int numberOfRuns) {
+        for (int i = 0; i < numberOfRuns; i++) {
             System.out.println("Run #" + (i + 1));
             System.out.println("Total matches: " + matcher.countMatches(path));
             System.out.println();

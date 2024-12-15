@@ -7,20 +7,19 @@ public class GridPathSolver {
     private final int[] rowOffset = {-1, 0, 1, 0};
     private final int[] columnOffset = {0, 1, 0, -1};
 
-    private final int PATH_LEN = 63; // Length of all possible paths
-    private final int GRID_SIZE = 10; // Two extra cells for the borders
-
-    // Current path of traversal
-    private final int[] currentPath = new int[PATH_LEN];
-
-    // Keeps track of which cell is already visited
-    private final boolean[][] onPath = new boolean[GRID_SIZE][GRID_SIZE];
-
-    // Writer to write paths to file
-    private final PathWriter pathWriter;
+    private final int PATH_LEN; // Length of all possible paths
+    private final int GRID_SIZE; // Total size of grid, including border (2 cells)
+    private final int[] currentPath; // Current path of traversal
+    private final boolean[][] onPath; // Keeps track of which cell is already visited
+    private final PathWriter pathWriter; // Writer to write paths to file
 
     public GridPathSolver(PathWriter pathWriter) {
         this.pathWriter = pathWriter;
+
+        PATH_LEN = (N * N) - 1;
+        GRID_SIZE = N + 2; // Two extra cells for the borders
+        currentPath = new int[PATH_LEN];
+        onPath = new boolean[GRID_SIZE][GRID_SIZE];
     }
 
     // Backtracking method to find and store valid paths
@@ -65,7 +64,8 @@ public class GridPathSolver {
 
             // Backtracking
             path.deleteCharAt(path.length() - 1);
-        } else { // Iterate through all four possible turns
+        } else {
+            // Iterate through all four possible turns
             for (int i = 0; i < 4; i++) {
                 int nextRow = currentRow + rowOffset[i];
                 int nextColumn = currentColumn + columnOffset[i];

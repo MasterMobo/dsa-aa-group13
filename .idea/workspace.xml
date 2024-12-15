@@ -5,29 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/BinaryPathWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathPrecomputor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validPaths.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/BinaryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/BinaryPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/BinaryPathReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/PathGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utils/PathGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GR.ASM/StoreToBinaryFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paths.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/GridPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/CSESSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/Trie/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/Trie/TrieNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
