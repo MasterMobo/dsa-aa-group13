@@ -71,6 +71,7 @@ public class Menu {
                 case 2 -> {
                     System.out.print("Enter the sequence: ");
                     String input = scanner.nextLine();
+                    if (!validateInput(input)) continue;
                     System.out.println();
                     System.out.print("Enter the number of runs: ");
                     int runs = getValidRunsInput();
@@ -108,6 +109,24 @@ public class Menu {
             System.out.println("Total matches: " + matcher.countMatches(path));
             System.out.println();
         }
+    }
+
+    private boolean validateInput(String input) {
+        if (input.length() != 63) {
+            System.out.println("Input path must have exactly 63 characters!");
+            return false;
+        }
+
+        String validCharacters = "UDLR*";
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (validCharacters.indexOf(c) == -1) {
+                System.out.println("Invalid path! Path can not contain character: " + c);
+                return false;
+            }
+        }
+
+        return true;
     }
 
 }

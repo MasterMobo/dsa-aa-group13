@@ -24,6 +24,7 @@ public class BinaryPathMatcher {
         BinaryConverter converter = new BinaryConverter();
 
         long[] input = converter.toBinArray(path);
+        int len = input.length;
         int matchCount = 0;
 
         long t1, t2;
@@ -34,11 +35,11 @@ public class BinaryPathMatcher {
         while (buffer.remaining() >= 8) { // Ensure there's at least one long left to read
             boolean matches = true;
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < len; i++) {
                 if (!converter.isMatch(buffer.getLong(), input[i])) {
                     // Skip to next path early if this doesn't match
                     matches = false;
-                    buffer.position(buffer.position() + (4 - i - 1) * 8);
+                    buffer.position(buffer.position() + (len - i - 1) * 8);
                     break;
                 }
             }
