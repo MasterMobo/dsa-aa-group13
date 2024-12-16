@@ -5,6 +5,9 @@ import org.example.Benchmarking.BenchmarkCases.CSESSolutionBenchmark;
 import org.example.Benchmarking.BenchmarkCases.StringPathMatcherBenchmark;
 import org.example.Utils.PathGenerator;
 
+// WARNING: Running this class will run all benchmark cases, which might take a long time.
+// If you only need a minimal benchmark, run SmallBenchmarkSuite.
+
 public class FullBenchmarkSuite extends BenchmarkSuite{
     public FullBenchmarkSuite() {
         super(9);

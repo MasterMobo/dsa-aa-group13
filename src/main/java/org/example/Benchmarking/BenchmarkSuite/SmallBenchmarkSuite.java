@@ -18,4 +18,9 @@ public class SmallBenchmarkSuite extends BenchmarkSuite{
         cases[1] = new BinaryPathMatcherBenchmark("Binary Path Matcher Random Case", 5, randomInput);
         cases[2] = new BinaryPathMatcherBenchmark("Binary Path Matcher Random Case", 5, bestCaseInput);
     }
+
+    public static void main(String[] args) {
+        BenchmarkSuite suite = new SmallBenchmarkSuite();
+        suite.run();
+    }
 }
