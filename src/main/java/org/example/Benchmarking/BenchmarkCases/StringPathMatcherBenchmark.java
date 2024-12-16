@@ -1,23 +1,22 @@
-package org.example.Benchmarking;
+package org.example.Benchmarking.BenchmarkCases;
 
-import org.example.PathMatching.BinaryPathMatcher.BinaryPathMatcher;
-import org.example.PathMatching.BinaryPathMatcher.BinaryPathReader;
+import org.example.Benchmarking.BenchmarkRunner;
 import org.example.PathMatching.PathMatcher;
 import org.example.PathMatching.StringPathMatcher;
 import org.example.PathPrecomputation.PathPrecomputor;
-import org.example.PathPrecomputation.PathWriter.BinaryPathWriter;
 import org.example.PathPrecomputation.PathWriter.PathWriter;
 import org.example.PathPrecomputation.PathWriter.StringPathWriter;
 
-public class StringPathMatcherBenchmark extends BenchmarkCase<Integer>{
+public class StringPathMatcherBenchmark extends Benchmark<Integer> {
     private final String input;
-    public StringPathMatcherBenchmark(String name, String input) {
-        super(name);
+
+    public StringPathMatcherBenchmark(String name, int runs, String input) {
+        super(name, runs);
         this.input = input;
     }
 
     public void run() {
-        Benchmarker benchmarker = new Benchmarker(20);
+        BenchmarkRunner benchmarkRunner = new BenchmarkRunner(runs);
 
         // Setup
         String fileName = "validPathStrings.txt";
@@ -28,7 +27,7 @@ public class StringPathMatcherBenchmark extends BenchmarkCase<Integer>{
 
         PathMatcher matcher = new StringPathMatcher(fileName);
 
-        result = benchmarker.measure(() -> {
+        result = benchmarkRunner.measure(() -> {
             return matcher.countMatches(input);
         });
     }

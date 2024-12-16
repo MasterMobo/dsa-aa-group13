@@ -1,11 +1,14 @@
 package org.example;
 
+import org.example.Benchmarking.BenchmarkSuite.BenchmarkSuite;
+import org.example.Benchmarking.BenchmarkSuite.SmallBenchmarkSuite;
 import org.example.PathMatching.BinaryPathMatcher.BinaryPathMatcher;
 import org.example.PathMatching.BinaryPathMatcher.BinaryPathReader;
+import org.example.PathMatching.PathMatcher;
 import org.example.Utils.PathGenerator;
-import org.example.PathPrecomputation.BinaryPathWriter;
+import org.example.PathPrecomputation.PathWriter.BinaryPathWriter;
 import org.example.PathPrecomputation.PathPrecomputor;
-import org.example.PathPrecomputation.PathWriter;
+import org.example.PathPrecomputation.PathWriter.PathWriter;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -13,7 +16,8 @@ import java.util.Scanner;
 public class Menu {
     private Scanner scanner;
 
-    BinaryPathMatcher matcher;
+    private final PathMatcher matcher;
+    private final BenchmarkSuite benchmarkSuite;
 
     public Menu() {
         scanner = new Scanner(System.in);
@@ -26,6 +30,8 @@ public class Menu {
 
         BinaryPathReader reader = new BinaryPathReader(fileName);
         matcher = new BinaryPathMatcher(reader);
+
+        benchmarkSuite = new SmallBenchmarkSuite();
     }
 
     public void run() {
@@ -42,8 +48,9 @@ public class Menu {
 
         while (true) {
             System.out.println("\nPlease choose an operation:");
-            System.out.println("1. Use a random sequence");
-            System.out.println("2. Use your sequence");
+            System.out.println("1. Use your sequence");
+            System.out.println("2. Use a random sequence");
+            System.out.println("3. Run benchmark");
             System.out.println("0. Exit");
             System.out.println("Your choice:");
 
@@ -61,14 +68,6 @@ public class Menu {
 
             switch (choice) {
                 case 1 -> {
-                    String randomString = generator.randomInputPath();
-                    System.out.println("Your new random sequence is:" + randomString);
-                    System.out.println();
-                    System.out.print("Enter the number of runs: ");
-                    int runs = getValidRunsInput();
-                    executeMatcher(randomString, runs);
-                }
-                case 2 -> {
                     System.out.print("Enter the sequence: ");
                     String input = scanner.nextLine();
                     if (!validateInput(input)) continue;
@@ -77,6 +76,15 @@ public class Menu {
                     int runs = getValidRunsInput();
                     executeMatcher(input, runs);
                 }
+                case 2 -> {
+                    String randomString = generator.randomInputPath();
+                    System.out.println("Your new random sequence is:" + randomString);
+                    System.out.println();
+                    System.out.print("Enter the number of runs: ");
+                    int runs = getValidRunsInput();
+                    executeMatcher(randomString, runs);
+                }
+                case 3 -> benchmarkSuite.run();
                 case 0 -> {
                     System.out.println("Exiting...");
                     return;
@@ -106,7 +114,7 @@ public class Menu {
     private void executeMatcher(String path, int numberOfRuns) {
         for (int i = 0; i < numberOfRuns; i++) {
             System.out.println("Run #" + (i + 1));
-            System.out.println("Total matches: " + matcher.countMatches(path));
+            matcher.countMatches(path);
             System.out.println();
         }
     }

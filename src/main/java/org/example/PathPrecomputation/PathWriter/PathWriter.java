@@ -1,4 +1,4 @@
-package org.example.PathPrecomputation;
+package org.example.PathPrecomputation.PathWriter;
 
 public interface PathWriter {
     String getFileName();

@@ -1,5 +1,7 @@
 package org.example.PathPrecomputation;
 
+import org.example.PathPrecomputation.PathWriter.PathWriter;
+
 public class GridPathSolver {
     private final int N = 8; // Size of the N x N grid
 

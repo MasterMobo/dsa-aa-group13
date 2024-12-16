@@ -1,8 +1,10 @@
 package org.example.PathMatching.BinaryPathMatcher;
 
+import org.example.PathMatching.PathMatcher;
+
 import java.nio.ByteBuffer;
 
-public class BinaryPathMatcher {
+public class BinaryPathMatcher implements PathMatcher {
 
     private BinaryPathReader reader;
 
@@ -14,6 +16,7 @@ public class BinaryPathMatcher {
     // Time Complexity: O(M x N)
     // - M is the number of valid paths
     // - N is the length of each path
+    @Override
     public int countMatches(String path) {
         ByteBuffer buffer = reader.getBuffer();
         if (buffer == null) {
@@ -48,7 +51,9 @@ public class BinaryPathMatcher {
         }
 
         t2 = System.currentTimeMillis();
+
         System.out.println("Searching time (ms): " + (t2 - t1));
+        System.out.println("Total paths: " + matchCount);
 
         return matchCount;
     }

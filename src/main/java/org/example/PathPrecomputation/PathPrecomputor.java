@@ -1,5 +1,7 @@
 package org.example.PathPrecomputation;
 
+import org.example.PathPrecomputation.PathWriter.PathWriter;
+
 import java.io.File;
 
 public class PathPrecomputor {

@@ -1,4 +1,4 @@
-package org.example.Benchmarking;
+package org.example.Benchmarking.BenchmarkCases;
 
 import org.example.PathMatching.BinaryPathMatcher.BinaryPathMatcher;
 import org.example.PathMatching.BinaryPathMatcher.BinaryPathReader;
@@ -7,19 +7,17 @@ import org.example.PathPrecomputation.PathPrecomputor;
 import org.example.PathPrecomputation.PathWriter.BinaryPathWriter;
 import org.example.PathPrecomputation.PathWriter.PathWriter;
 
-public class BinaryPathMatcherBenchmark extends BenchmarkCase<Integer> {
+public class BinaryPathMatcherBenchmark extends Benchmark<Integer> {
 
     private String input;
 
-    public BinaryPathMatcherBenchmark(String name, String input) {
-        super(name);
+    public BinaryPathMatcherBenchmark(String name, int runs, String input) {
+        super(name, runs);
         this.input = input;
     }
 
     @Override
     public void run() {
-        Benchmarker benchmarker = new Benchmarker(20);
-
         // Setup
         String fileName = "validPaths.bin";
 
@@ -33,7 +31,7 @@ public class BinaryPathMatcherBenchmark extends BenchmarkCase<Integer> {
 
 
         // Measure
-        result = benchmarker.measure(() -> {
+        result = benchmarkRunner.measure(() -> {
             return matcher.countMatches(input);
         });
     }

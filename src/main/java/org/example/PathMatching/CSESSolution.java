@@ -1,6 +1,6 @@
 package org.example.PathMatching;
 
-public class CSESSolution {
+public class CSESSolution implements PathMatcher{
     static boolean[][] used = new boolean[10][10];
     static {
         for (int i = 0; i <= 9; i += 9)
@@ -10,8 +10,9 @@ public class CSESSolution {
             for (int i = 0; i <= 9; i++)
                 used[i][j] = true;
     }
-    static char[] path;
-    static int cnt;
+    char[] path;
+    int cnt;
+
     static boolean only(int i, int j) {
         if (i == 8 && j == 1)
             return false;
@@ -26,7 +27,7 @@ public class CSESSolution {
             k++;
         return k == 1;
     }
-    static void solve(int i, int j, int h) {
+    void solve(int i, int j, int h) {
         if (h == 63 || i == 8 && j == 1) {
             if (h == 63)
                 cnt++;
@@ -74,14 +75,17 @@ public class CSESSolution {
             solve(i, j + 1, h);
         used[i][j] = false;
     }
-    public static void main(String[] args) {
-        path = "***************************************************************".toCharArray();
+
+    @Override
+    public int countMatches(String path) {
+        cnt = 0;
+        this.path = path.toCharArray();
         long t1 = System.currentTimeMillis();
         solve(1, 1, 0);
         long t2 = System.currentTimeMillis();
 
-        System.out.println(cnt);
-        System.out.println("Time (ms): " + (t2 - t1));
+        System.out.println("Searching time (ms): " + (t2 - t1));
+        System.out.println("Total paths: " + cnt);
+        return cnt;
     }
-
 }

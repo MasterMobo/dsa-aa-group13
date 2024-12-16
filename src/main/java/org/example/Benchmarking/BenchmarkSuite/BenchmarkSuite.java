@@ -1,35 +1,28 @@
-package org.example.Benchmarking;
+package org.example.Benchmarking.BenchmarkSuite;
 
-import org.example.Benchmarking.BenchmarkCases.BenchmarkCase;
-import org.example.Benchmarking.BenchmarkCases.BinaryPathMatcherBenchmark;
-import org.example.Benchmarking.BenchmarkCases.CSESSolutionBenchmark;
-import org.example.Benchmarking.BenchmarkCases.StringPathMatcherBenchmark;
+import org.example.Benchmarking.BenchmarkCases.Benchmark;
 
-public class BenchmarkSuite {
-    private final int numCases = 3;
+public abstract class BenchmarkSuite {
+    protected final int numCases;
 
-    private final BenchmarkCase[] cases;
+    protected final Benchmark[] cases;
 
-    public BenchmarkSuite() {
-        cases = new BenchmarkCase[numCases];
+    public BenchmarkSuite(int numCases) {
+        this.numCases = numCases;
+        cases = new Benchmark[numCases];
 
-        cases[0] = new BinaryPathMatcherBenchmark("Binary Path Matcher Worst Case", 10, "***************************************************************");
-        cases[1] = new StringPathMatcherBenchmark("String Path Matcher Worst Case", 10,"***************************************************************");
-        cases[2] = new CSESSolutionBenchmark("CSES Solution Worst Case", 10, "***************************************************************");
+        initializeCases();
     }
+
+    protected abstract void initializeCases();
 
     public void run() {
-        for (BenchmarkCase benchmarkCase: cases) {
-            benchmarkCase.run();
+        for (Benchmark benchmark : cases) {
+            benchmark.run();
         }
 
-        for (BenchmarkCase benchmarkCase: cases) {
-            benchmarkCase.displayResult();
+        for (Benchmark benchmark : cases) {
+            benchmark.displayResult();
         }
-    }
-
-    public static void main(String[] args) {
-        BenchmarkSuite suite = new BenchmarkSuite();
-        suite.run();
     }
 }

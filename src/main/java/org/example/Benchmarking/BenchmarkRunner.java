@@ -2,10 +2,10 @@ package org.example.Benchmarking;
 
 import java.util.function.Supplier;
 
-public class Benchmarker {
+public class BenchmarkRunner {
     private final int iterations;
 
-    public Benchmarker(int iterations) {
+    public BenchmarkRunner(int iterations) {
         this.iterations = iterations;
     }
 
