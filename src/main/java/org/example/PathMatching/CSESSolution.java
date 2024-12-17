@@ -1,5 +1,7 @@
 package org.example.PathMatching;
 
+// Fasted accepted Java solution on CSES Grid Paths
+// credits: https://cses.fi/problemset/hack/1625/entry/166997/
 public class CSESSolution implements PathMatcher{
     static boolean[][] used = new boolean[10][10];
     static {
