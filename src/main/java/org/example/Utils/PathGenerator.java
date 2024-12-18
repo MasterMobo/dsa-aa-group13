@@ -2,6 +2,7 @@ package org.example.Utils;
 
 import java.util.Random;
 
+// Class to generate random paths
 public class PathGenerator {
     private static final String selection = "URLD";
     private static final String inputSelection = "URLD*";

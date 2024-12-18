@@ -2,6 +2,7 @@ package org.example.Benchmarking;
 
 import java.util.function.Supplier;
 
+// Class to run a benchmark
 public class BenchmarkRunner {
     private final int iterations;
 
@@ -9,6 +10,8 @@ public class BenchmarkRunner {
         this.iterations = iterations;
     }
 
+    // Run the provided function *iterations* times.
+    // Returns: a BenchmarkResult instance representing the results
     public <T> BenchmarkResult<T> measure(Supplier<T> function) {
         // Due to Java's limitations with generic arrays, we're using Object[] internally and casting it.
         // This is safe in this context since we're only storing the results and not manipulating them.

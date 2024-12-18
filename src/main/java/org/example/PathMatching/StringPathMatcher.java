@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+// Class to count matching paths as strings
 public class StringPathMatcher implements PathMatcher{
     private String fileName;
 

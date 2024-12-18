@@ -2,6 +2,7 @@ package org.example.PathPrecomputation;
 
 import org.example.PathPrecomputation.PathWriter.PathWriter;
 
+// Class to find all valid paths
 public class GridPathSolver {
     private final int N = 8; // Size of the N x N grid
 
@@ -25,6 +26,8 @@ public class GridPathSolver {
     }
 
     // Backtracking method to find and store valid paths
+    // Time Complexity: O(4^(N^2) x N^2)
+    //  - N is the size of the grid
     private int tryPath(int pathIdx, int currentRow, int currentColumn, StringBuilder path) {
         // Optimization checks (for valid path constraints)
         if ((onPath[currentRow][currentColumn - 1] && onPath[currentRow][currentColumn + 1])
@@ -111,14 +114,14 @@ public class GridPathSolver {
     }
 
     public int solve() {
+        // Setup
         setupGrid();
-
         int startIdx = 0;
-        // Always start path at (1, 1)
-        int startR = 1;
+        int startR = 1;     // Always start path at (1, 1)
         int startC = 1;
         StringBuilder path = new StringBuilder();
 
+        // Perform backtracking
         int res = tryPath(startIdx, startR, startC, path);
 
         // Notify writer that search has complete (for clean-up)

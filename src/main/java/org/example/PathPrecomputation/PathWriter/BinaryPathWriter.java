@@ -4,6 +4,8 @@ import org.example.PathMatching.BinaryPathMatcher.BinaryConverter;
 
 import java.io.*;
 
+
+// Class to write paths as binary representation to a file
 public class BinaryPathWriter implements PathWriter {
     private final String fileName;
     private DataOutputStream dataStream = null;
@@ -13,6 +15,9 @@ public class BinaryPathWriter implements PathWriter {
         this.fileName = fileName;
     }
 
+    // Converts the path to binary, then write it to a binary file
+    // Time Complexity: O(N)
+    //  - N is the length of the path
     @Override
     public void onPathFound(String path) {
         try {
@@ -28,6 +33,7 @@ public class BinaryPathWriter implements PathWriter {
         }
     }
 
+    // Clean-up after finish writing
     @Override
     public void onSearchComplete() {
         try {

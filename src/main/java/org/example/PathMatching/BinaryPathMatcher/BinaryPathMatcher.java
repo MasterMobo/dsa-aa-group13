@@ -4,6 +4,7 @@ import org.example.PathMatching.PathMatcher;
 
 import java.nio.ByteBuffer;
 
+// Class to count matching paths as binary representation
 public class BinaryPathMatcher implements PathMatcher {
 
     private BinaryPathReader reader;
@@ -18,24 +19,26 @@ public class BinaryPathMatcher implements PathMatcher {
     // - N is the length of each path
     @Override
     public int countMatches(String path) {
+        // Read the binary file
         ByteBuffer buffer = reader.getBuffer();
         if (buffer == null) {
             System.out.println("ERROR: Buffer not initialized");
             return 0;
         }
 
+        // Convert input into binary
         BinaryConverter converter = new BinaryConverter();
-
         long[] input = converter.toBinArray(path);
+
         int len = input.length;
         int matchCount = 0;
 
-        long t1, t2;
+        long t1, t2;    // Timers
 
         t1 = System.currentTimeMillis();
 
-        // Process the data in the buffer
-        while (buffer.remaining() >= 8) { // Ensure there's at least one long left to read
+        // Search the buffer for matches
+        while (buffer.remaining() >= 8 * len) { // Ensure there's enough longs left to read
             boolean matches = true;
 
             for (int i = 0; i < len; i++) {

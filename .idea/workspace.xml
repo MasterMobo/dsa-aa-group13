@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="">
+    <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="added CSES ref">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/CSESSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/CSESSolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/BinaryPathMatcherBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/BinaryPathMatcherBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/CSESSolutionBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/CSESSolutionBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/StringPathMatcherBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/StringPathMatcherBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/BenchmarkSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/BenchmarkSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/FullBenchmarkSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/FullBenchmarkSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/SmallBenchmarkSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/SmallBenchmarkSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/StringPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/StringPathMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathPrecomputor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathPrecomputor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/BinaryPathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/BinaryPathWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/PathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/PathWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/StringPathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/StringPathWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils/PathGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utils/PathGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +87,19 @@
       <option name="presentableId" value="Default" />
       <updated>1732943075608</updated>
     </task>
+    <task id="LOCAL-00001" summary="added CSES ref">
+      <created>1734428072641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734428072641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added CSES ref" />
+    <option name="LAST_COMMIT_MESSAGE" value="added CSES ref" />
   </component>
 </project>

@@ -6,6 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+// Class to write paths as strings to a file
 public class StringPathWriter implements PathWriter{
     protected final String fileName;
     private BufferedWriter writer = null;

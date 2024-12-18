@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+// Class to read binary file into a buffer
 public class BinaryPathReader {
     private String fileName;
 

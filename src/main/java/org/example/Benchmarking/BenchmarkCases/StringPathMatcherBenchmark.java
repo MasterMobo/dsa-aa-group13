@@ -7,6 +7,7 @@ import org.example.PathPrecomputation.PathPrecomputor;
 import org.example.PathPrecomputation.PathWriter.PathWriter;
 import org.example.PathPrecomputation.PathWriter.StringPathWriter;
 
+// String matching benchmark
 public class StringPathMatcherBenchmark extends Benchmark<Integer> {
     private final String input;
 

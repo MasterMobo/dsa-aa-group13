@@ -13,19 +13,22 @@ import org.example.PathPrecomputation.PathWriter.PathWriter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+// Class for the command line interface
 public class Menu {
-    private Scanner scanner;
+    private Scanner scanner;    // Used for reading inputs
 
-    private final PathMatcher matcher;
-    private final BenchmarkSuite benchmarkSuite;
+    private final PathMatcher matcher;  // Used to calculate paths
+    private final BenchmarkSuite benchmarkSuite;    // Used to run benchmark
 
     public Menu() {
         scanner = new Scanner(System.in);
 
+        // Set up program
         String fileName = "validPaths.bin";
 
         PathWriter writer = new BinaryPathWriter(fileName);
         PathPrecomputor precomputor = new PathPrecomputor(writer);
+        // Run pre-computation
         precomputor.precompute();
 
         BinaryPathReader reader = new BinaryPathReader(fileName);
@@ -44,8 +47,10 @@ public class Menu {
     }
 
     private void displayMenu() {
+        // Generator for random path generation
         PathGenerator generator = new PathGenerator(63);
 
+        // Main event loop
         while (true) {
             System.out.println("\nPlease choose an operation:");
             System.out.println("1. Use your sequence");

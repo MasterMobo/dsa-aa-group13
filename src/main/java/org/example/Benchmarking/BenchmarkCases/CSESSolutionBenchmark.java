@@ -3,6 +3,7 @@ package org.example.Benchmarking.BenchmarkCases;
 import org.example.PathMatching.CSESSolution;
 import org.example.PathMatching.PathMatcher;
 
+// CSES solution benchmark
 public class CSESSolutionBenchmark extends Benchmark<Integer> {
 
     private String input;

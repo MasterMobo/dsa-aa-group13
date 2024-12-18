@@ -7,6 +7,7 @@ import org.example.PathPrecomputation.PathPrecomputor;
 import org.example.PathPrecomputation.PathWriter.BinaryPathWriter;
 import org.example.PathPrecomputation.PathWriter.PathWriter;
 
+// Bit masking benchmark
 public class BinaryPathMatcherBenchmark extends Benchmark<Integer> {
 
     private String input;

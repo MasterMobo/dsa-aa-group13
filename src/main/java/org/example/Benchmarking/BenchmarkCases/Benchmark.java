@@ -3,6 +3,7 @@ package org.example.Benchmarking.BenchmarkCases;
 import org.example.Benchmarking.BenchmarkResult;
 import org.example.Benchmarking.BenchmarkRunner;
 
+// Class representing a single benchmark case
 public abstract class Benchmark<T> {
 
     protected String name;

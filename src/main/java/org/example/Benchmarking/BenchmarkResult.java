@@ -1,5 +1,6 @@
 package org.example.Benchmarking;
 
+// Class to represent a result of a benchmark
 public class BenchmarkResult<T> {
     private final T[] results;
     private final long[] executionTimes;

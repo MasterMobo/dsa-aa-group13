@@ -1,5 +1,6 @@
 package org.example.PathMatching.BinaryPathMatcher;
 
+// Class to convert a path string into binary representation
 public class BinaryConverter {
 
     // Encodes a path character into 4-bit integer
@@ -14,6 +15,9 @@ public class BinaryConverter {
         };
     }
 
+    // Convert a single path string segment into binary representation
+    // Time Complexity: O(N)
+    //  - N is the length of the segment
     private long toBinary(String s) {
         long bin = 0;
 
@@ -26,6 +30,9 @@ public class BinaryConverter {
         return bin;
     }
 
+    // Convert a path string into binary representation
+    // Time Complexity: O(N)
+    //  - N is the length of the path
     public long[] toBinArray(String s) {
         // Calculate how many full longs we need (16 chars per long)
         int numFullLongs = (s.length() + 15) / 16;  // Round up division
@@ -40,15 +47,8 @@ public class BinaryConverter {
         return res;
     }
 
-    public boolean isMatch(long[] n1, long[] n2) {
-        for (int i = 0; i < n1.length; i++) {
-            if (!isMatch(n1[i], n2[i]))
-                return false;
-        }
-
-        return true;
-    }
-
+    // Checks whether the binary representations of two paths match
+    // Time Complexity: O(1)
     public boolean isMatch(long b1, long b2) {
         return b1 == (b1 | b2);
     }

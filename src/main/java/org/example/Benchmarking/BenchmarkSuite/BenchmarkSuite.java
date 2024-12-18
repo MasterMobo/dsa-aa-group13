@@ -2,10 +2,11 @@ package org.example.Benchmarking.BenchmarkSuite;
 
 import org.example.Benchmarking.BenchmarkCases.Benchmark;
 
+// Class representing a collection of benchmarks
 public abstract class BenchmarkSuite {
-    protected final int numCases;
+    protected final int numCases;   // Number of benchmark cases to be run
 
-    protected final Benchmark[] cases;
+    protected final Benchmark[] cases;  // Array of benchmark cases to be run
 
     public BenchmarkSuite(int numCases) {
         this.numCases = numCases;

@@ -3,6 +3,7 @@ package org.example.Benchmarking.BenchmarkSuite;
 import org.example.Benchmarking.BenchmarkCases.BinaryPathMatcherBenchmark;
 import org.example.Utils.PathGenerator;
 
+// Small benchmark suite, only runs bit masking cases
 public class SmallBenchmarkSuite extends BenchmarkSuite{
     public SmallBenchmarkSuite() {
         super(3);

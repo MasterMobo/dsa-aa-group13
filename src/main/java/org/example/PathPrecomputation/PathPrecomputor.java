@@ -4,6 +4,7 @@ import org.example.PathPrecomputation.PathWriter.PathWriter;
 
 import java.io.File;
 
+// Class to perform pre-computation
 public class PathPrecomputor {
     private final PathWriter writer;
 
@@ -11,6 +12,9 @@ public class PathPrecomputor {
         this.writer = writer;
     }
 
+    // Perform pre-computation
+    // If path does not exist, run the grid path solver and write paths to file.
+    // If path already exists, does nothing.
     public void precompute() {
         String fileName = writer.getFileName();
 

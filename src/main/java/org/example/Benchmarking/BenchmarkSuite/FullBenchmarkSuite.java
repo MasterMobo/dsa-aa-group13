@@ -8,6 +8,7 @@ import org.example.Utils.PathGenerator;
 // WARNING: Running this class will run all benchmark cases, which might take a long time.
 // If you only need a minimal benchmark, run SmallBenchmarkSuite.
 
+// Full suite of benchmarks, including bit masking, string matching and CSES solution
 public class FullBenchmarkSuite extends BenchmarkSuite{
     public FullBenchmarkSuite() {
         super(9);
