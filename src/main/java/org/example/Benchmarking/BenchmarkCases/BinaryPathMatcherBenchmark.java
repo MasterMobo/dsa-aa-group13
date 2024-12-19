@@ -35,5 +35,8 @@ public class BinaryPathMatcherBenchmark extends Benchmark<Integer> {
         result = benchmarkRunner.measure(() -> {
             return matcher.countMatches(input);
         });
+
+        // Clean-up
+        reader.clearBuffer();
     }
 }

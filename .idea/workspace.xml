@@ -6,28 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ee716af3-f1fe-445f-9bc5-29570a1238df" name="Changes" comment="added CSES ref">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/Benchmark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/BinaryPathMatcherBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/BinaryPathMatcherBenchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/CSESSolutionBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/CSESSolutionBenchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/StringPathMatcherBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkCases/StringPathMatcherBenchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/BenchmarkSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/BenchmarkSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/FullBenchmarkSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/FullBenchmarkSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/SmallBenchmarkSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Benchmarking/BenchmarkSuite/SmallBenchmarkSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathMatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/BinaryPathMatcher/BinaryPathReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/PathMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/StringPathMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathMatching/StringPathMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/GridPathSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathPrecomputor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathPrecomputor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/BinaryPathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/BinaryPathWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/PathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/PathWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/StringPathWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PathPrecomputation/PathWriter/StringPathWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils/PathGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utils/PathGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MasterMobo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MasterMobo/dsa-aa-group13.git&quot;,
+    &quot;accountId&quot;: &quot;fe6c06f3-f113-48a8-91cc-b7eda8571e18&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2pYVcXwHq1tot683VP2dQOHBN5R" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,11 +51,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Profiler#1&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Git Projects/dsa-aa-group13&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Git Projects/dsa-aa-group13&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -78,6 +79,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,6 +95,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732943075608</updated>
+      <workItem from="1734601972961" duration="18000" />
+      <workItem from="1734601998821" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="added CSES ref">
       <created>1734428072641</created>
@@ -96,6 +107,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

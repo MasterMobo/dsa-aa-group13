@@ -24,6 +24,13 @@ public class BinaryPathReader {
         return buffer;
     }
 
+    public void clearBuffer() {
+        if (buffer != null) {
+            buffer.clear();
+            buffer = null;
+        };
+    }
+
     public void initializeBuffer() {
         try (FileChannel channel = new FileInputStream(fileName).getChannel()) {
             long t1, t2;
