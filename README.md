@@ -29,4 +29,4 @@ git clone https://github.com/MasterMobo/dsa-aa-group13.git
 
 The program only runs the minimal benchmark suite. If you want to run the full suite, navigate to FullBenchmarkSuite and run from there. Note that this suite might take a long time to fully complete.
 
-If you any encounter problem reading the binary file (validPaths.bin), delete the file and run the program again. It should regenerate the file.
+If you encounter any problem reading the binary file (validPaths.bin), delete the file and run the program again. It should regenerate the file.
