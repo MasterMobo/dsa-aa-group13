@@ -1,8 +1,6 @@
 # COSC2658 - Data Structures and Algorithms Group Assignment
 ## By Group 13
 
----
-
 ## Contribution Score
 
 | Name                  | SID      | Score |
@@ -12,12 +10,9 @@
 | Nguyen Dinh Lam       | s3990403 | 2     |
 | Chu Nhu Bao Tuan      | s3977886 | 2     |
 
----
-
 ## Video Demonstration
 Video URL: https://youtu.be/AJVxgIgGI0s 
 
----
 ## Running Instructions
 
 1. Clone the repository
