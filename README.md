@@ -1,5 +1,5 @@
 # COSC2658 - Data Structures and Algorithms Group Assignment
-## By Group 17
+## By Group 13
 
 ---
 
