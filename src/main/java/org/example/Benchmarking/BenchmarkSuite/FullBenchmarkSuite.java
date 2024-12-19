@@ -22,7 +22,7 @@ public class FullBenchmarkSuite extends BenchmarkSuite{
 
         cases[0] = new BinaryPathMatcherBenchmark("Binary Path Matcher Worst Case", 10, "***************************************************************");
         cases[1] = new BinaryPathMatcherBenchmark("Binary Path Matcher Random Case", 10, randomInput);
-        cases[2] = new BinaryPathMatcherBenchmark("Binary Path Matcher Random Case", 10, bestCaseInput);
+        cases[2] = new BinaryPathMatcherBenchmark("Binary Path Matcher Best Case", 10, bestCaseInput);
 
         cases[3] = new StringPathMatcherBenchmark("String Path Matcher Worst Case", 10, "***************************************************************");
         cases[4] = new StringPathMatcherBenchmark("String Path Matcher Random Case", 10, randomInput);
